@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar E-mail</title>
+</head>
+<body>
+    <h1>Verifique seu E-mail</h1>
+    <p>Um e-mail de verificação foi enviado para sua conta. Por favor, verifique seu e-mail e clique no link de verificação.</p>
+    <button onclick="resendVerificationEmail()">Reenviar E-mail de Verificação</button>
+    <button onclick="logout()">Sair</button>
+
+    <script>
+        function resendVerificationEmail() {
+            const user = firebase.auth().currentUser;
+            user.sendEmailVerification().then(() => {
+                alert('E-mail de verificação reenviado.');
+            }).catch(error => {
+                alert(getErrorMessage(error));
+            });
+        }
+
+        function logout() {
+            firebase.auth().signOut().then(() => {
+                window.location.href = "login.html";
+            }).catch(error => {
+                alert(getErrorMessage(error));
+            });
+        }
+
+        function getErrorMessage(error) {
+            return error.message;
+        }
+    </script>
+</body>
+</html>

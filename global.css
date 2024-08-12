@@ -1,0 +1,133 @@
+/* Estilo geral da página */
+body {
+    margin: 0;
+    background: rgb(45, 211, 111); /* Cor de fundo verde da loja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    font-family: Arial, sans-serif; /* Fonte consistente */
+}
+
+/* Estilo do container de formulário */
+.container {
+    width: 100%;
+    max-width: 400px; /* Largura máxima do container */
+    background-color: white; /* Cor de fundo do container */
+    padding: 20px;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais sutil */
+    margin: 20px;
+}
+
+/* Estilo dos títulos dentro do container */
+.container h1 {
+    text-align: center;
+    color: rgb(45, 211, 111); /* Cor verde da loja */
+    margin-bottom: 20px;
+    font-size: 24px; /* Tamanho da fonte dos títulos */
+    font-weight: bold; /* Negrito no título */
+}
+
+/* Estilo dos campos do formulário */
+.form-field {
+    margin-bottom: 15px; /* Margem entre os campos */
+}
+
+/* Estilo dos inputs e selects */
+input, select {
+    padding: 12px;
+    width: 100%; /* Largura total dos elementos */
+    border: 1px solid #ddd; /* Borda cinza clara */
+    border-radius: 6px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Cor de fundo dos inputs */
+}
+
+/* Estilo dos botões */
+button {
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%; /* Largura total dos botões */
+    border: none;
+    border-radius: 6px; /* Bordas arredondadas */
+    color: white;
+    font-weight: bold; /* Negrito no texto dos botões */
+}
+
+/* Estilo específico para o botão com fundo verde */
+button.solid {
+    background: rgb(45, 211, 111); /* Verde da loja */
+    color: white; /* Texto branco */
+}
+
+/* Estilo específico para o botão com fundo branco e texto preto */
+button.clear {
+    background: white;
+    color: rgb(45, 211, 111); /* Verde da loja */
+}
+
+/* Estilo específico para o botão com contorno */
+button.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Estilo específico para o botão de alerta/danger */
+button.outline.danger {
+    color: red;
+    border-color: red;
+}
+
+/* Estilo para botões desativados */
+button[disabled] {
+    opacity: 0.6;
+    color: grey;
+}
+
+/* Estilo do elemento de carregamento */
+.loading {
+    background: rgba(255, 255, 255, 0.8); /* Leve fundo branco transparente */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do texto dentro do carregamento */
+.loading label {
+    font-size: 24px;
+    color: rgb(45, 211, 111); /* Cor verde da loja */
+}
+
+/* Estilo dos botões de ação flutuantes (opcional) */
+button.fab {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    border: none;
+    font-size: 24px;
+    box-shadow: 2px 2px 2px gray;
+}
+
+button.fab.fixed {
+    position: fixed;
+}
+
+button.fab.bottom {
+    bottom: 32px;
+}
+
+button.fab.right {
+    right: 32px;
+}
+
+/* Estilo para labels, se necessário */
+label {
+    color: rgb(45, 211, 111); /* Cor do texto das labels */
+    font-weight: bold;
+}

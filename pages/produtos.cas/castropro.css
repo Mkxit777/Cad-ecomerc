@@ -1,0 +1,93 @@
+/* Estilo geral da página de gerenciamento de produtos */
+body {
+    background: rgb(45, 211, 111); /* Fundo verde da loja */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte consistente com o estilo da loja */
+}
+
+/* Estilo do container de formulário */
+.container {
+    width: 300px; /* Largura do container de formulário */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos títulos dentro do container */
+.container h1 {
+    text-align: center;
+    color: rgb(45, 211, 111); /* Cor dos títulos */
+    margin-bottom: 20px;
+}
+
+/* Estilo dos inputs e botões */
+input, button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Ajusta a largura dos elementos */
+    border: none; /* Remove bordas padrão */
+    border-radius: 4px; /* Adiciona bordas arredondadas */
+}
+
+/* Estilo dos inputs de texto */
+input[type="text"], input[type="number"] {
+    background-color: #f0f0f0; /* Cor de fundo dos inputs */
+}
+
+/* Estilo dos botões */
+button {
+    cursor: pointer;
+    font-weight: bold; /* Negrito no texto dos botões */
+}
+
+/* Estilo específico para o botão de cadastro */
+button#cadastrarProduto {
+    background: rgb(45, 211, 111); /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+}
+
+/* Estilo específico para os botões de ação (buscar, atualizar, deletar) */
+button#buscarProduto {
+    background: rgb(0, 123, 255); /* Cor de fundo do botão de buscar */
+    color: white;
+}
+
+button#atualizarProduto {
+    background: rgb(255, 193, 7); /* Cor de fundo do botão de atualizar */
+    color: black;
+}
+
+button#deletarProduto {
+    background: rgb(220, 53, 69); /* Cor de fundo do botão de deletar */
+    color: white;
+}
+
+/* Estilo para o botão desativado */
+button[disabled] {
+    opacity: 0.8;
+    color: grey;
+}
+
+/* Estilo para o botão com fundo branco e texto preto */
+button.clear {
+    background: white;
+    color: black;
+}
+
+/* Estilo para o botão sólido */
+button.solid {
+    background: white;
+    color: rgb(45, 211, 111); /* Cor do texto do botão sólido */
+}
+
+/* Estilo para o botão com contorno */
+button.outline {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+}
